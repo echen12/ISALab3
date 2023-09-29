@@ -16,4 +16,4 @@ http.createServer(function (req, res) {
 		res.writeHead(200, { "Content-Type": "text/plain" });
 		res.end("COMP 4537 Lab 3 Anna & Edmond. Add name query to the url to see the greeting,");
 	}
-}).listen(8888);
+}).listen(process.env.PORT || 5000);
